@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fdf1e5;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+main {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #00a36c;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #00a36c;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+section ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+section ul li {
+  margin-bottom: 8px;
+}
+
+.boton-comprar {
+  display: inline-block;
+  background-color: #00a36c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-comprar:hover {
+  background-color: #007f52;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 20px;
+  }
+
+  .boton-comprar {
+    width: 100%;
+    text-align: center;
+  }
+}
