@@ -54,7 +54,7 @@ section {
 }
 
 .pregunta-personal button {
-  background-color: #00a36c;
+  background-color: #002fa7;
   color: white;
   border: none;
   padding: 10px;
@@ -64,5 +64,5 @@ section {
 }
 
 .pregunta-personal button:hover {
-  background-color: #007f52;
+  background-color: #002fa7;
 }

@@ -1,7 +1,15 @@
-body {
+* {
+  margin: 0;
+  padding: 0%;
+}
+main {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #fdf1e5;
+  background-image: url("../imagenes/element5-digital-OyCl7Y4y0Bk-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 header {
@@ -10,24 +18,56 @@ header {
   padding: 30px;
   text-align: center;
 }
+nav {
+  background-color: #002fa7;
+  padding: 20px 0;
+}
 
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav:hover {
+  background-color: #ffffff;
+}
+
+nav:hover ul li a {
+  color: #002fa7;
+}
 main {
   padding: 40px 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+  width: 100%;
 }
 
 section {
   background-color: white;
   padding: 25px;
   border-radius: 10px;
-  border: 2px solid #00a36c;
+  border: 2px solid #002fa7;
+  margin-top: 0px;
+  width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 section h2 {
   margin-bottom: 10px;
-  color: #00a36c;
+  color: #002fa7;
 }
 
 section p {
@@ -45,7 +85,7 @@ section ul li {
 
 .boton-comprar {
   display: inline-block;
-  background-color: #00a36c;
+  background-color: #002fa7;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -55,16 +95,54 @@ section ul li {
 }
 
 .boton-comprar:hover {
-  background-color: #007f52;
+  background-color: #002fa7;
 }
 
-@media screen and (max-width: 768px) {
-  section {
-    padding: 20px;
-  }
+footer {
+  background-color: #002fa7;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
 
-  .boton-comprar {
-    width: 100%;
-    text-align: center;
-  }
+.footer-redes {
+  text-align: center;
+}
+
+.footer-redes a {
+  margin: 0 10px;
+  color: white;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-redes a:hover {
+  color: black;
+}
+
+.footer-creditos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer-creditos .columna {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-creditos h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-creditos p {
+  margin: 5px 0;
 }
