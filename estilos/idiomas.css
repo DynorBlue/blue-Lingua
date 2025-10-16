@@ -146,13 +146,3 @@ footer {
 .footer-creditos p {
   margin: 5px 0;
 }
-@media screen and (max-width: 768px) {
-  section {
-    padding: 20px;
-  }
-
-  .boton-comprar {
-    width: 100%;
-    text-align: center;
-  }
-}
